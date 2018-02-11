@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/medal_wall_item_margin_top">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/mdl_wall_item_image"
+        android:layout_width="65.0dip"
+        android:layout_height="74.0dip"
+        android:layout_centerHorizontal="true"
+        app:actualImageScaleType="fitCenter"
+        app:placeholderImage="@drawable/medal_default_img" />
+
+    <TextView
+        android:id="@+id/mdl_wall_item_mdlname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mdl_wall_item_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="6.0dip"
+        android:text="TextView"
+        android:textColor="@android:color/white"
+        android:textSize="12.0sp" />
+
+    <TextView
+        android:id="@+id/mdl_wall_item_got_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mdl_wall_item_mdlname"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="4.0dip"
+        android:text="@string/medal_got"
+        android:textColor="#ffd8d8d8"
+        android:textSize="9.0sp" />
+
+    <ProgressBar
+        android:id="@+id/mdl_wall_progressbar"
+        style="@style/medal_wall_progress_style"
+        android:layout_width="55.0dip"
+        android:layout_height="5.0dip"
+        android:layout_below="@+id/mdl_wall_item_mdlname"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8.0dip"
+        android:max="100"
+        android:progress="50" />
+</RelativeLayout>
